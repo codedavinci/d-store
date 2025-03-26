@@ -185,6 +185,7 @@ const ProductCard = ({product}: ProductCardProps) => {
             });
           })}
         </div>
+
         {/* Product Title */}
         <div className=" mt-3 text-[14px] leading-[16px] font-roboto font-normal">
           {product.title}
