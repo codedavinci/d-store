@@ -203,12 +203,12 @@ const ProductCard = ({product}: ProductCardProps) => {
             });
           })}
         </div>
-
+        {/* Product Title */}
         <div className=" mt-3 text-[14px] leading-[16px] font-roboto font-normal">
           {product.title}
         </div>
 
-        {/* Product Title */}
+        {/* Product Vendor */}
         <h4 className=" text-[#0A4874] mt-2 text-lg font-semibold">
           {product.vendor}
         </h4>
