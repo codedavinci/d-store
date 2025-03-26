@@ -1,0 +1,5 @@
+name = "domaine-store-test"
+type = "hydrogen"
+
+[build]
+command = "npm run build"
