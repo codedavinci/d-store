@@ -78,26 +78,8 @@ function Swatch({
   );
 }
 
-function addFakeSaleOnSomeProducts(variants: any) {
-  return variants.map((variant: any) => {
-    const shouldAddSale = Math.random() < 0.5;
-
-    if (shouldAddSale) {
-      return {
-        ...variant,
-        compareAtPrice: {
-          amount: '300.0',
-          currencyCode: 'CAD',
-        },
-      };
-    }
-    return variant;
-  });
-}
-
 const ProductCard = ({product}: ProductCardProps) => {
   let variants = product.variants.edges.map((edge) => edge.node);
-  variants = addFakeSaleOnSomeProducts(variants);
 
   const [selectedVariant, setSelectedVariant] = useState(variants[0]);
   const [hoverVariant, setHoverVariant] = useState<
